@@ -1,0 +1,27 @@
+# Site settings
+name: 方法三
+email: fsjhfut@163.com
+author: M/J
+#url: http://xiaokedada.com
+#resume_site: http://xiaokedada.com/me/
+github: https://github.com/fangfa3/
+baseurl: ""  #根目录
+description: 假如生活欺骗了你，不要悲伤，不要哭泣。
+motto: 第一句唱前半生，走马西风长路。
+#motto: 如果生活欺骗了你，不要悲伤，不要哭泣。
+banner: 不要回答！不要回答！不要回答！
+#permalink: /:categories/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
+excerpt_separator:  '<!-- more -->' #文章摘要
+paginate: 8
+paginate_path: "page:num"
+gems: [jekyll-paginate]
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+github_username: fangfa3
+highlighter: rouge
+markdown: kramdown
+FB:
+  comments :
+    provider : disqus
+    disqus :
+        short_name : 
