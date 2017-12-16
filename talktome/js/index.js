@@ -50,7 +50,7 @@ var myBot = new BotUI('hello-world');
           return myBot.message.add ({
           delay: 1000,
           loading: true,
-          content: `This is me 23333... ![me](./me.jpg)`
+          content: `This is me 23333... ![me](./huge.jpg)`
         });
         break;
         case 'your contacts':
