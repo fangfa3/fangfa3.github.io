@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<title>FANG PAGE</title>
+	<meta name="description" content="机器学习　人工智能　 git">
+	<meta name="keywords" content="机器学习" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="author" contect="fangfa3, fangfa3@163.com">
+	<meta name="robots" content="index,follow">
+	<link rel="shortcut icon" href="/styles/images/favicon.png">
+	<link rel="icon" href="/styles/images/favicon.png">
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="canonical" href="http://localhost:4000">
+	<!--[if lte IE 9]>
+    	<script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+  	<![endif]-->
+	<!--[if lt IE 9]>
+    	<script>window.location.href='/upgrade-your-browser.html';</script>
+    <![endif]-->
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+  			var hm = document.createElement("script");
+  			hm.src = "https://hm.baidu.com/hm.js?40ab350f7c60a488b8e8093960c0faf2";
+  			var s = document.getElementsByTagName("script")[0]; 
+  			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+
+  <body class="index">
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">
+        <img src="/styles/images/logo.png" alt="方法三">
+      </a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li></li>
+        <li>
+          <a href="/">首页</a>
+        </li>
+        <li>
+          <a href="/categories/">博文分类</a>
+        </li>
+        <li>
+          <a href="/tag">标签目录</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a rel="nofollow" href="/reference">外域链接</a></li>
+        <li><a rel="nofollow" href="/talktome">TalkToMe</a></li>
+             
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <div class="docs-header pa" id="content">
+    <canvas id="mycanvas">你的浏览器不支持canvas</canvas>
+    <div class="container" >
+  	
+        <h1>方法三</h1>
+        <p>未来已来。</p>
+    
+  </div>
+</div>
+
+    
+      
+<div class="banner">
+  <div class="container lh30">
+  	
+    	慢慢来
+    
+      <div id="search-container" class="pull-right">
+          <input type="text" id="search-input" placeholder=" 试试直接搜索吧...">
+          <label class="searchIcon glyphicon glyphicon-search" for="search-input"></label>
+          <ul id="results-container"></ul>
+      </div>
+  </div>
+</div>
+
+    
+     <div class="container docs-container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="sidebar hidden-print" role="complementary">
+            <ul class="about-me text-center">
+              <li class="sidebar-title text-left"><span>About Me</span></li>
+              <li class="me-header"><img class="img-circle" src="/styles/images/me/fang.png" alt="一步一步来"></li>
+              <li><p><a href="https://github.com/fangfa3" target="_blank">FANG</a></p></li>
+              <li class="text-primary"><p class="lead">这是最好的时代！</p></li>
+              <!--calendar-->
+              <script src="/styles/js/calendar.min.js"></script>
+              <li class="calendar"></li>
+              <script>var year = (new Date()).getFullYear() + 1;
+              new calendar('.calendar', {
+                limitRange: [
+                  ['today', year + '0101']
+                ],
+                isRange: true
+              });</script>
+              <!--tags-->
+              <li id="tagscloud">
+                
+                
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-9" role="main">
+          <div class="panel docs-content">
+            <!-- 遍历分页后的文章 -->           
+            
+              <!-- 分页链接 -->
+              <ul class="pagination">
+                <li>
+                  <a href="/">
+                    <span>首页</span>
+                  </a>
+                </li>
+                <li>
+                  
+                  
+                    <a href="/page">
+                      
+                      <span>&laquo;</span>
+                    </a>
+                    
+                </li>
+                <li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                </li>
+                <li>
+                  
+                  <span>&raquo;</span>
+                  
+                </li>
+                <li>
+                  <a href="/page">
+                    <span>末页</span>
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+ </div>
+<script src="/styles/js/tag.min.js"></script>
+<script>
+  var i=0;
+  var oTag=null;
+  oDiv=document.getElementById('tagscloud');
+  aA=oDiv.getElementsByTagName('a');
+  for(i=0;i<aA.length;i++)
+  {
+    oTag={};
+    aA[i].onmouseover = (function (obj) {
+      return function () {
+        obj.on = true;
+        this.style.zIndex = 9999;
+        this.style.color = '#fff';
+        this.style.padding = '5px 5px';
+        this.style.filter = "alpha(opacity=100)";
+        this.style.opacity = 1;
+      }
+    })(oTag)
+    aA[i].onmouseout = (function (obj) {
+      return function () {
+        obj.on = false;
+        this.style.zIndex = obj.zIndex;
+        this.style.color = '#fff';
+        this.style.padding = '0 5px';
+        this.style.filter = "alpha(opacity=" + 100 * obj.alpha + ")";
+        this.style.opacity = obj.alpha;
+        this.style.zIndex = obj.zIndex;
+      }
+    })(oTag)
+    oTag.offsetWidth = aA[i].offsetWidth;
+    oTag.offsetHeight = aA[i].offsetHeight;
+    mcList.push(oTag);
+  }
+  sineCosine( 0,0,0 );
+  positionAll();
+  (function () {
+    update();
+    setTimeout(arguments.callee, 40);
+  })();
+</script>
+
+    <footer class="footer" role="contentinfo">
+	<!--不蒜子pv/uv统计-->
+	<div class="post-meta">
+            <p>Total <span id="busuanzi_value_site_pv"></span> views，您是本站的第<span id="busuanzi_value_site_uv"></span>个小伙伴，<span id="busuanzi_value_page_pv"></span> Hits</p><br/>
+    </div>
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2017 <a href="" target="_blank"><code>fangfa3</code></a>. All rights reserved. </p>
+		<p>Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>， Data by <a href="https://tongji.baidu.com/web/23811489/overview/index" target="_blank">Bai Du</a>.</p>
+	</div>
+	<ul id="gotop"><li><span>TOP</span></li></ul>
+</footer>
+<script src="http://apps.bdimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="/styles/js/function.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.min.js"></script>
+  </body>
+</html>
