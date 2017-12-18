@@ -57,7 +57,7 @@ var myBot = new BotUI('hello-world');
           return myBot.message.add ({
           delay: 1000,
           loading: true,
-          content: `Go ahead, try [my website](http://fangfa3.github.io) or <a href="mailto:fsjhfut@163.com">Email me.</a> </br>
+          content: `Go ahead, try [my website](https://fangfa3.github.io) or <a href="mailto:fsjhfut@163.com">Email me.</a> </br>
                     Here is my [Github address](https://github.com/fangfa3).`
         });
         break;/*
@@ -116,7 +116,7 @@ var myBot = new BotUI('hello-world');
                return myBot.message.add ({
                delay: 1000,
                loading: true,
-               content: `Go ahead, try [my website](http://fangfa3.github.io) or <a href="mailto:fsjhfut@163.com">Email me.</a> </br>
+               content: `Go ahead, try [my website](https://fangfa3.github.io) or <a href="mailto:fsjhfut@163.com">Email me.</a> </br>
                          Here is my [Github address](https://github.com/fangfa3).`
              });
              break;/*
@@ -124,6 +124,7 @@ var myBot = new BotUI('hello-world');
                return myBot.message.add ({
                  delay: 1000,
                  loading: true,
+                 
                  content: `i like coding. it's my life.`
                })*/
              default:
