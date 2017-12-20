@@ -8,7 +8,7 @@ baseurl:   #根目录
 description: 未来已来。
 #motto: 
 motto: 假如生活欺骗了你，不要悲伤，不要哭泣。
-banner: 慢慢来
+banner: 独立
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
 excerpt_separator:  '<!-- more -->' #文章摘要
