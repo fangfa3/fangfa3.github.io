@@ -7,7 +7,7 @@ github: https://github.com/fangfa3/
 baseurl:   #根目录
 description: 未来已来。
 #motto: 
-motto: 假如生活欺骗了你，不要悲伤，不要哭泣。
+motto: "We can only see a short distance ahead, but we can see plenty there that needs to be done."
 banner: 独立
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
