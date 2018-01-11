@@ -28,4 +28,5 @@ abbr {text-decoration: none;}
 <ol class="rounded-list">
 <li><a href="https://github.com/" target="_blank">Github</a></li>
 <li><a href="http://www.paddlepaddle.org/" target="_blank">PaddlePaddle</a></li>
+<li><a href="http://www.xfyun.cn/" target="_blank">讯飞开放平台</a></li>
 </ol>

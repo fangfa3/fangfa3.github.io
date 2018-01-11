@@ -1,7 +1,7 @@
 ---
 layout: original
 title: "AI中各种概念的中英文对照"
-date: 2018-01-05 22：00:00 +0800
+date: 2018-01-05 22:00:00 +0800
 categories: Machine_Learning
 tag: AI
 ---
