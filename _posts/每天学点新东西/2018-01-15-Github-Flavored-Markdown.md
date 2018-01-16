@@ -165,8 +165,10 @@ int main ()
 
 ### 图片
 
-`![fishing bird.jpg](https://github.com/fangfa3/
-  fangfa3.github.io/blob/master/styles/images/scene/fishing_bird.jpg?raw=true)`
+```
+![fishing bird.jpg](https://github.com/fangfa3/
+  fangfa3.github.io/blob/master/styles/images/scene/fishing_bird.jpg?raw=true)
+```
 
 效果如下：
 
