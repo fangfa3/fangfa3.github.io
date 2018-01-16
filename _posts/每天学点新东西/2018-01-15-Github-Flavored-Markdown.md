@@ -36,6 +36,8 @@ GFM是Github拓展的基于Markdown的一种格式，在标准Markdown上做了�
 
 `**加粗了的_斜体_**` : **加粗了的_斜体_**
 
+<!-- more -->
+
 ### 引用
 
 ```
@@ -55,36 +57,50 @@ GFM是Github拓展的基于Markdown的一种格式，在标准Markdown上做了�
 引用一段代码吧！
 
 \`\`\` python
+
 import numpy as np 
+
 import tensorflow as tf 
 
 a = 5
+
 b = a + 5
+
 print (b)
+
 \`\`\`
 
 效果：
 
 ``` python
 import numpy as np 
-import tensorflow as tf 
+import tensorflow as tf
 
 a = 5
 b = a + 5
+
 print (b)
 ```
 
 
 \`\`\` cpp
+
 \#include "qcustomplot"
+
 \#include "QMessage"
+
 \#include "QDebug"
 
 int main ()
+
 {
+
 	qdebug()<<"hello"<<endl;
+
 	return 0;
+
 }
+
 \`\`\`
 
 效果如下：
@@ -144,19 +160,17 @@ int main ()
 - 第三
 
 1. 第一步
-  1. 首先
-  2. 其次
-  3. 最后
 2. 第二步
 3. 第三步
 
 ### 图片
 
-`![fishing bird.jpg](https://github.com/fangfa3/fangfa3.github.io/styles/images/scene/fishing_bird.jpg)`
+`![fishing bird.jpg](https://github.com/fangfa3/
+  fangfa3.github.io/blob/master/styles/images/scene/fishing_bird.jpg?raw=true)`
 
 效果如下：
 
-![fishing bird.jpg](https://github.com/fangfa3/fangfa3.github.io/styles/images/scene/fishing_bird.jpg)
+![fishing bird.jpg](https://github.com/fangfa3/fangfa3.github.io/blob/master/styles/images/scene/fishing_bird.jpg?raw=true)
 
 ### 标题
 ```
