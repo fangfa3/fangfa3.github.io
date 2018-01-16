@@ -12,6 +12,8 @@ AI（Artificial Intellgence）-- 人工智能
 
 Machine Learning -- 机器学习
 
+<!-- more -->
+
 Neural Network -- 神经网络
 
 Deep Learning -- 深度学习
