@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "python学习-面向对象编程"
-date: 2018-01-05 21:00:00 +  
+date: 2018-01-17 21:00:00   
 categories: python
 tag: python
 ---
@@ -45,7 +45,7 @@ obj3.speak()
 
 执行结果如下：
 
-![first_oop.jpg](https://github.com/fangfa3/fangfa3.github.io/blob/master/styles/images/python/first_oop.jpg?raw=true)
+![first_oop.jpg](https://github.com/fangfa3/fangfa3.github.io/blob/master/styles/images/python/first_oop.JPG?raw=true)
 
 *需要注意几点：*
 
