@@ -118,11 +118,17 @@
               <li id="tagscloud">
                 
                 
-                <a href="/tag/#Node-ref">Node</a>
+                <a href="/tag/#机器学习-ref">机器学习</a>
                 
                 <a href="/tag/#AI-ref">AI</a>
                 
-                <a href="/tag/#机器学习-ref">机器学习</a>
+                <a href="/tag/#LSNE-ref">LSNE</a>
+                
+                <a href="/tag/#git-ref">git</a>
+                
+                <a href="/tag/#markdown-ref">markdown</a>
+                
+                <a href="/tag/#python-ref">python</a>
                 
                 
               </li>
@@ -143,21 +149,103 @@
             <div>
               
               <div class="breadcrumb clearfix">
-                <div><h3 style="margin-top:13px"><a class="color-title" rel="nofollow" href='/2018/01/05/Machine-Learning-1/' target="_blank">机器学习中一些基础的概念</a></h3></div>
-                  <div class="excerpt">
-<p>##1、 人工智能、机器学习和深度学习
-####人工智能 
-人工智能分为强人工智能与弱人工智能，强人工智能是指机器能够像人类一样在各个方面感知、学习和思考。目前看来还比较遥远。</p>
+                <div><h3 style="margin-top:13px"><a class="color-title" rel="nofollow" href='/2018/01/24/Learn-Something-New-Everyday/' target="_blank">每天学点新东西 ———— 一月</a></h3></div>
+                  <div class="excerpt"><ul id="markdown-toc">
+  <li><a href="#20180123-伺服电机的三种控制方式" id="markdown-toc-20180123-伺服电机的三种控制方式"><code class="highlighter-rouge">2018.01.23</code> 伺服电机的三种控制方式</a></li>
+  <li><a href="#20180120-a-simple-object-model--1" id="markdown-toc-20180120-a-simple-object-model--1"><code class="highlighter-rouge">2018.01.20</code> A Simple Object Model —— 1</a></li>
+</ul>
+
+<blockquote>
+  <p><strong>新模式说明：每天学习一个新的小技能或是解决一个小问题，花费时间20分钟即可，每天都在这一篇中进行更新。</strong></p>
+</blockquote>
+
+<h4 id="20180123-伺服电机的三种控制方式"><code class="highlighter-rouge">2018.01.23</code> 伺服电机的三种控制方式</h4>
+
+<p>伺服电机是用于准确定位和频繁启停的高动态响应的机械设备。伺服电机有三种控制方式，位置控制方式、速度控制方式和转矩控制方式。</p>
+
+<p>简单理解的话，位置控制方式就是通过控制电机运转的位置来控制伺服电机，让你转到什么位置你就转到什么位置；速度控制方式就是控制伺服电机运转的速度，让你以多快的速度转你就转多快；转矩控制方式是通过控制伺服电机的转矩来控制其运转，让你以多大的转矩转你就以多大的转矩转。</p>
+
+<p>这里简单介绍一下转矩。转矩是转动力矩的简称，也就是一种力矩，力矩是作用力使物理绕着转动轴或支点转动的趋向。理解力矩可以联想推门的场景，一扇关着的门，从门把手处、中间位置和门内侧三个地方把门完全推开是需要不同的力的，最终把门完全推开，产生的力矩是一样的，因为力矩不仅与力有关，也与位移有关。</p>
+
+<p>闲言少叙，回归正题。具体说一下三种控制方式。</p>
+
+<p>位置控制方式，一般是通过外部输入的脉冲来控制。通过脉冲的频率来确定转动速度的大小，通过脉冲的个数来确定转动的角度。位置控制方式可以对速度和位置都有很严格的控制。</p>
+
+<p>速度控制方式，通过外部模拟量的输入和脉冲的频率都可以进行转动速度的控制。</p>
+
+<p>转矩控制方式，通过外部模拟量的输入来设定电机轴对外的输出转矩的大小。</p>
+
+<h4 id="20180120-a-simple-object-model--1"><code class="highlighter-rouge">2018.01.20</code> A Simple Object Model —— 1</h4>
+
+<p>from <a href="http://aosabook.org/en/500L/a-simple-object-model.html">500 lines or less</a></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">test_read_write_field</span><span class="p">():</span>
+	<span class="c"># Python code</span>
+	<span class="k">class</span> <span class="nc">A</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+		<span class="k">pass</span>
+	<span class="n">obj</span> <span class="o">=</span> <span class="n">A</span><span class="p">()</span>
+	<span class="n">obj</span><span class="o">.</span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+	<span class="k">assert</span> <span class="n">obj</span><span class="o">.</span><span class="n">a</span> <span class="o">==</span> <span class="mi">1</span>
+
+	<span class="n">obj</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
+	<span class="k">assert</span> <span class="n">obj</span><span class="o">.</span><span class="n">a</span> <span class="o">==</span> <span class="mi">1</span>
+	<span class="k">assert</span> <span class="n">obj</span><span class="o">.</span><span class="n">b</span> <span class="o">==</span> <span class="mi">5</span>
+
+	<span class="n">obj</span><span class="o">.</span><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+	<span class="k">assert</span> <span class="n">obj</span><span class="o">.</span><span class="n">a</span> <span class="o">==</span> <span class="mi">2</span>
+	<span class="k">assert</span> <span class="n">obj</span><span class="o">.</span><span class="n">b</span> <span class="o">==</span> <span class="mi">5</span>
+
+	<span class="c"># Object model code </span>
+<span class="c">#	A = Class(name="A", base_class=OBJECT, fields={}, metaclass=TYPE)</span>
+<span class="c">#	obj = Instance(A)</span>
+<span class="c">#	obj.write_attr("a", 1)</span>
+<span class="c">#	assert obj.read_attr("a") == 1</span>
+<span class="c">#</span>
+<span class="c">#	obj.write_attr("b", 5)</span>
+<span class="c">#	assert obj.read_attr("a") == 1</span>
+<span class="c">#	assert obj.read_attr("b") == 5</span>
+<span class="c">#</span>
+<span class="c">#	obj.write_attr("a", 2)</span>
+<span class="c">#	assert obj.read_attr("a") == 2</span>
+<span class="c">#	assert obj.read_attr("b") == 5</span>
+
+<span class="k">class</span> <span class="nc">Base</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span>
+
+	<span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cls</span><span class="p">,</span> <span class="n">fields</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">cls</span> <span class="o">=</span> <span class="n">cls</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">fields</span> <span class="o">=</span> <span class="n">fields</span>
+
+	<span class="k">def</span> <span class="nf">read_attr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fieldname</span><span class="p">):</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_read_dict</span><span class="p">(</span><span class="n">fieldname</span><span class="p">)</span>
+
+	<span class="k">def</span> <span class="nf">write_attr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fieldname</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_write_dict</span><span class="p">(</span><span class="n">fieldname</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+
+	<span class="k">def</span> <span class="nf">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cls</span><span class="p">):</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">cls</span><span class="o">.</span><span class="nb">issubclass</span><span class="p">(</span><span class="n">cls</span><span class="p">)</span>
+
+	<span class="k">def</span> <span class="nf">callmethod</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">methname</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+		<span class="n">meth</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cls</span><span class="o">.</span><span class="n">_read_from_class</span><span class="p">(</span><span class="n">methname</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">meth</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">)</span>
+
+	<span class="k">def</span> <span class="nf">_read_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fieldname</span><span class="p">):</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">fieldname</span><span class="p">,</span> <span class="n">MISSING</span><span class="p">)</span>
+
+	<span class="k">def</span> <span class="nf">_write_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fieldname</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="p">[</span><span class="n">fieldname</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+<span class="n">MISSING</span> <span class="o">=</span> <span class="nb">object</span><span class="p">()</span>
+</code></pre></div></div>
 
 </div>
                   <!--
-                  <p><span class="date-artical pull-left lh30">January  5 , 2018<a class="tags-title" href="/tag/#机器学习-ref">机器学习</a></span><a class="btn btn-primary pull-right" rel="nofollow" href='/2018/01/05/Machine-Learning-1/' target="_blank">阅读全文</a></p>
+                  <p><span class="date-artical pull-left lh30">January 24 , 2018<a class="tags-title" href="/tag/#LSNE-ref">LSNE</a></span><a class="btn btn-primary pull-right" rel="nofollow" href='/2018/01/24/Learn-Something-New-Everyday/' target="_blank">阅读全文</a></p>
                   -->
-                  <p><span class="date-artical pull-left lh30">January  5 , 2018
+                  <p><span class="date-artical pull-left lh30">January 24 , 2018
                       
-                        <a class="tags-title" href="/tag/#机器学习-ref">机器学习</a>&nbsp;
+                        <a class="tags-title" href="/tag/#LSNE-ref">LSNE</a>&nbsp;
                       
-                      </span><a class="btn btn-primary pull-right" rel="nofollow" href='/2018/01/05/Machine-Learning-1/' target="_blank">阅读全文</a></p>
+                      </span><a class="btn btn-primary pull-right" rel="nofollow" href='/2018/01/24/Learn-Something-New-Everyday/' target="_blank">阅读全文</a></p>
               </div><hr>
               
             
@@ -171,47 +259,27 @@
             
             
               <div class="breadcrumb clearfix">
-                <div><h3 style="margin-top:13px"><a class="color-title" rel="nofollow" href='/2018/01/05/AI-concept-English-VS-Chinese/' target="_blank">AI中各种概念的中英文对照</a></h3></div>
+                <div><h3 style="margin-top:13px"><a class="color-title" rel="nofollow" href='/2018/01/19/Create-Something/' target="_blank">Learn and Create</a></h3></div>
                   <div class="excerpt">
-<p>AI（Artificial Intellgence）– 人工智能</p>
+<blockquote>
+  <p>What I cannot create, I don’t understand.</p>
+</blockquote>
 
-<p>Machine Learning – 机器学习</p>
+<p>那些你创造不出来的东西，你就没有理解它。</p>
 
-<p>Neural Network – 神经网络</p>
-
-<p>Deep Learning – 深度学习</p>
-
-<p>Supervised Learning – 监督学习</p>
-
-<p>Unsupervised Learning – 无监督学习</p>
-
-<p>Cost function – 成本函数/代价函数</p>
-
-<p>Regression – 回归</p>
-
-<p>Linear Regression –线性回归</p>
-
-<p>Classfication – 分类</p>
-
-<p>Gradient Descent – 梯度下降法</p>
-
-<p>Learning Rate – 学习率</p>
 </div>
                   <!--
-                  <p><span class="date-artical pull-left lh30">January  5 , 2018<a class="tags-title" href="/tag/#AI-ref">AI</a></span><a class="btn btn-primary pull-right" rel="nofollow" href='/2018/01/05/AI-concept-English-VS-Chinese/' target="_blank">阅读全文</a></p>
+                  <p><span class="date-artical pull-left lh30">January 19 , 2018<a class="tags-title" href="/tag/#LSNE-ref">LSNE</a></span><a class="btn btn-primary pull-right" rel="nofollow" href='/2018/01/19/Create-Something/' target="_blank">阅读全文</a></p>
                   -->
-                  <p><span class="date-artical pull-left lh30">January  5 , 2018
+                  <p><span class="date-artical pull-left lh30">January 19 , 2018
                       
-                        <a class="tags-title" href="/tag/#AI-ref">AI</a>&nbsp;
+                        <a class="tags-title" href="/tag/#LSNE-ref">LSNE</a>&nbsp;
                       
-                      </span><a class="btn btn-primary pull-right" rel="nofollow" href='/2018/01/05/AI-concept-English-VS-Chinese/' target="_blank">阅读全文</a></p>
+                      </span><a class="btn btn-primary pull-right" rel="nofollow" href='/2018/01/19/Create-Something/' target="_blank">阅读全文</a></p>
               </div><hr>
               
             
-            </ul>
-            <h2 id="year_2017">2017</h2>
-            <h3 id="month_2017_June">June</h3>
-            <ul>
+              
               
               
             
@@ -221,19 +289,195 @@
             
             
               <div class="breadcrumb clearfix">
-                <div><h3 style="margin-top:13px"><a class="color-title" rel="nofollow" href='/2017/06/21/Stdio/' target="_blank">Node中的标准输入输出流</a></h3></div>
+                <div><h3 style="margin-top:13px"><a class="color-title" rel="nofollow" href='/2018/01/18/First-OOP-in-Python/' target="_blank">python学习-面向对象编程</a></h3></div>
                   <div class="excerpt">
-<p>在<a href="https://www.nowcoder.com/">牛客网</a>中对<code class="highlighter-rouge">JavaScript</code>程序员是很不友好的。在处理输入输出流的时候，总是得不到好的处理。在Windows平台下，在处理外部输入输出的时候也非常不擅长进行调试。所以这里，针对这个些问题，看看有没有解决方法。</p>
+<p>学习用<code class="highlighter-rouge">python</code>写了个简单的面向对象的程序。</p>
 
 </div>
                   <!--
-                  <p><span class="date-artical pull-left lh30">June 21 , 2017<a class="tags-title" href="/tag/#Node-ref">Node</a></span><a class="btn btn-primary pull-right" rel="nofollow" href='/2017/06/21/Stdio/' target="_blank">阅读全文</a></p>
+                  <p><span class="date-artical pull-left lh30">January 18 , 2018<a class="tags-title" href="/tag/#python-ref">python</a></span><a class="btn btn-primary pull-right" rel="nofollow" href='/2018/01/18/First-OOP-in-Python/' target="_blank">阅读全文</a></p>
                   -->
-                  <p><span class="date-artical pull-left lh30">June 21 , 2017
+                  <p><span class="date-artical pull-left lh30">January 18 , 2018
                       
-                        <a class="tags-title" href="/tag/#Node-ref">Node</a>&nbsp;
+                        <a class="tags-title" href="/tag/#python-ref">python</a>&nbsp;
                       
-                      </span><a class="btn btn-primary pull-right" rel="nofollow" href='/2017/06/21/Stdio/' target="_blank">阅读全文</a></p>
+                      </span><a class="btn btn-primary pull-right" rel="nofollow" href='/2018/01/18/First-OOP-in-Python/' target="_blank">阅读全文</a></p>
+              </div><hr>
+              
+            
+              
+              
+              
+            
+            
+            
+            
+            
+            
+              <div class="breadcrumb clearfix">
+                <div><h3 style="margin-top:13px"><a class="color-title" rel="nofollow" href='/2018/01/17/Object-Oriented-Programming/' target="_blank">面向对象编程</a></h3></div>
+                  <div class="excerpt"><ul id="markdown-toc">
+  <li><a href="#何为面向对象编程" id="markdown-toc-何为面向对象编程">何为面向对象编程</a></li>
+</ul>
+
+<h3 id="何为面向对象编程">何为面向对象编程</h3>
+
+<p><del>首先，你得有个对象。</del></p>
+
+<p>面向对象，是一种对过程不断抽象的思想。面向过程，需要考虑的是这个事情该怎么做，分为几步，每一步怎么做。而面向对象，是有个人来做这件事，这个人可以分几步来完成这个事情。</p>
+
+</div>
+                  <!--
+                  <p><span class="date-artical pull-left lh30">January 17 , 2018<a class="tags-title" href="/tag/#python-ref">python</a></span><a class="btn btn-primary pull-right" rel="nofollow" href='/2018/01/17/Object-Oriented-Programming/' target="_blank">阅读全文</a></p>
+                  -->
+                  <p><span class="date-artical pull-left lh30">January 17 , 2018
+                      
+                        <a class="tags-title" href="/tag/#python-ref">python</a>&nbsp;
+                      
+                      </span><a class="btn btn-primary pull-right" rel="nofollow" href='/2018/01/17/Object-Oriented-Programming/' target="_blank">阅读全文</a></p>
+              </div><hr>
+              
+            
+              
+              
+              
+            
+            
+            
+            
+            
+            
+              <div class="breadcrumb clearfix">
+                <div><h3 style="margin-top:13px"><a class="color-title" rel="nofollow" href='/2018/01/16/Github-Flavored-Markdown/' target="_blank">GitHub Flavored Markdown 常用格式</a></h3></div>
+                  <div class="excerpt"><ul id="markdown-toc">
+  <li><a href="#表格" id="markdown-toc-表格">表格</a></li>
+</ul>
+
+<p>GFM是Github拓展的基于Markdown的一种格式，在标准Markdown上做了少量修改。</p>
+
+<h3 id="表格">表格</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|姓名|学号|班级|
+|-|-|-|
+|张三|201221|B2|
+|李四|201256|C3|
+</code></pre></div></div>
+
+<p>效果如下：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>姓名</th>
+      <th>学号</th>
+      <th>班级</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>张三</td>
+      <td>201221</td>
+      <td>B2</td>
+    </tr>
+    <tr>
+      <td>李四</td>
+      <td>201256</td>
+      <td>C3</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+                  <!--
+                  <p><span class="date-artical pull-left lh30">January 16 , 2018<a class="tags-title" href="/tag/#markdown-ref">markdown</a></span><a class="btn btn-primary pull-right" rel="nofollow" href='/2018/01/16/Github-Flavored-Markdown/' target="_blank">阅读全文</a></p>
+                  -->
+                  <p><span class="date-artical pull-left lh30">January 16 , 2018
+                      
+                        <a class="tags-title" href="/tag/#markdown-ref">markdown</a>&nbsp;
+                      
+                      </span><a class="btn btn-primary pull-right" rel="nofollow" href='/2018/01/16/Github-Flavored-Markdown/' target="_blank">阅读全文</a></p>
+              </div><hr>
+              
+            
+              
+              
+              
+            
+            
+            
+            
+            
+            
+              <div class="breadcrumb clearfix">
+                <div><h3 style="margin-top:13px"><a class="color-title" rel="nofollow" href='/2018/01/15/Markdown-Problem/' target="_blank">Markdown push到github上格式不显示</a></h3></div>
+                  <div class="excerpt">
+<p>之前用Markdown格式写了一篇文章，预览时可以显示大标题小标题，push到GitHub上后，在打开blog发现并没有按照Markdown语法来显示。</p>
+
+<p>查了一下，才知道github使用的markdown不是标准markdown，而是 github flavored markdown，即GFM。</p>
+
+<p>在标题使用上，需要在 # 后空一格。</p>
+
+<p>明天学习一下GFM的常规使用。</p>
+</div>
+                  <!--
+                  <p><span class="date-artical pull-left lh30">January 15 , 2018<a class="tags-title" href="/tag/#markdown-ref">markdown</a></span><a class="btn btn-primary pull-right" rel="nofollow" href='/2018/01/15/Markdown-Problem/' target="_blank">阅读全文</a></p>
+                  -->
+                  <p><span class="date-artical pull-left lh30">January 15 , 2018
+                      
+                        <a class="tags-title" href="/tag/#markdown-ref">markdown</a>&nbsp;
+                      
+                      </span><a class="btn btn-primary pull-right" rel="nofollow" href='/2018/01/15/Markdown-Problem/' target="_blank">阅读全文</a></p>
+              </div><hr>
+              
+            
+              
+              
+              
+            
+            
+            
+            
+            
+            
+              <div class="breadcrumb clearfix">
+                <div><h3 style="margin-top:13px"><a class="color-title" rel="nofollow" href='/2018/01/13/Git-pull/' target="_blank">git pull</a></h3></div>
+                  <div class="excerpt">
+<p>在不同的机器上使用Git时，需要在每个机器上都保持着最新的程序。比如说在机器A上修改了一些程序，push到github。之后在机器B上使用程序，希望在机器B上用的是更改后的程序，就可以用git pull命令实现。
+建议：每次在使用git时，先pull一下。</p>
+</div>
+                  <!--
+                  <p><span class="date-artical pull-left lh30">January 13 , 2018<a class="tags-title" href="/tag/#git-ref">git</a></span><a class="btn btn-primary pull-right" rel="nofollow" href='/2018/01/13/Git-pull/' target="_blank">阅读全文</a></p>
+                  -->
+                  <p><span class="date-artical pull-left lh30">January 13 , 2018
+                      
+                        <a class="tags-title" href="/tag/#git-ref">git</a>&nbsp;
+                      
+                      </span><a class="btn btn-primary pull-right" rel="nofollow" href='/2018/01/13/Git-pull/' target="_blank">阅读全文</a></p>
+              </div><hr>
+              
+            
+              
+              
+              
+            
+            
+            
+            
+            
+            
+              <div class="breadcrumb clearfix">
+                <div><h3 style="margin-top:13px"><a class="color-title" rel="nofollow" href='/2018/01/12/Learn-Something-New-Everyday/' target="_blank">每天学点新东西-开篇</a></h3></div>
+                  <div class="excerpt">
+<p>种一棵树，最好的时间是十年前，其次是现在。</p>
+
+</div>
+                  <!--
+                  <p><span class="date-artical pull-left lh30">January 12 , 2018<a class="tags-title" href="/tag/#LSNE-ref">LSNE</a></span><a class="btn btn-primary pull-right" rel="nofollow" href='/2018/01/12/Learn-Something-New-Everyday/' target="_blank">阅读全文</a></p>
+                  -->
+                  <p><span class="date-artical pull-left lh30">January 12 , 2018
+                      
+                        <a class="tags-title" href="/tag/#LSNE-ref">LSNE</a>&nbsp;
+                      
+                      </span><a class="btn btn-primary pull-right" rel="nofollow" href='/2018/01/12/Learn-Something-New-Everyday/' target="_blank">阅读全文</a></p>
               </div><hr>
               
             </div>
@@ -269,14 +513,20 @@
                 <span class="active">1</span>
                 
                 
+                
+                <a href="/page2/">2</a>
+                
+                
                 </li>
                 <li>
                   
-                  <span>&raquo;</span>
+                  <a href="/page2">
+                    <span>&raquo;</span>
+                  </a>
                   
                 </li>
                 <li>
-                  <a href="/page1">
+                  <a href="/page2">
                     <span>末页</span>
                   </a>
                 </li>
@@ -334,7 +584,7 @@
     </div>
 	<div class="container">
 		<p class="copyright">Copyright &copy; 2018 <a href="" target="_blank"><code>fangfa3</code></a>. All rights reserved. </p>
-		<p>Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>， Data by <a href="https://tongji.baidu.com/web/23811489/overview/index" target="_blank">Bai Du</a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>， Data by <a href="https://tongji.baidu.com/web/23811489/overview/index" target="_blank">Baidu</a>.</p>
 	</div>
 	<ul id="gotop"><li><span>TOP</span></li></ul>
 </footer>
