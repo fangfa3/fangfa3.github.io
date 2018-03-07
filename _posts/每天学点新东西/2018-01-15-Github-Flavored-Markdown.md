@@ -34,6 +34,31 @@ GFM是Github拓展的基于Markdown的一种格式，在标准Markdown上做了�
 
 `~~删了吧~~` : ~~删了吧~~
 
+### 公式
+
+预览公式需要使用MathJax，所以需要先配置：开启Markdown Preview对MathJax的支持。配置方法是打开在 Markdown Preview 的用户配置文件 (Package Settings -> Markdown Preview -> Setting - User) 里添加如下内容：
+
+```
+{
+	"enable_mathjax": true,
+	"enable_highlight": true,
+}
+```
+
+#### LaTex简明教程
+
+先来看个例子：
+
+```
+$$ J(\theta) = \frac 1 2 \sum_{i=1}^m (h_\theta(x^{(i)})-y^{(i)})^2 $$
+```
+上面用LaTex格式书写的数学公式经过MathJax展示后效果如下：
+$$ J(\theta) = \frac 1 2 \sum_{i=1}^m (h_\theta(x^{(i)})-y^{(i)})^2 $$
+
+另外，行间公式使用`$$`作为公式的左右界限，行内公式使用`$`作为公式的左右界限。如$ \theta_i=\theta_i-\alpha\frac\partial{\\partial\theta_i}J(\theta) $
+
+更复杂的语法参考[Cmd Markdown 公式指导手册](https://www.zybuluo.com/codeep/note/163962)
+
 ### 引用
 
 ```
@@ -169,6 +194,10 @@ int main ()
 效果如下：
 
 ![fishing bird.jpg](https://github.com/fangfa3/fangfa3.github.io/blob/master/styles/images/scene/fishing_bird.jpg?raw=true)
+
+### 预览
+在*Sublime Text* 下安装*Markdown Preview*插件。之后运用 *Alt* + *M* 快捷键即可在浏览器中预览。快捷键可修改：点击Preferences
+--> 选择Key Bindings User 。
 
 ### 标题
 ```
