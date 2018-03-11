@@ -13,7 +13,7 @@ GFM是Github拓展的基于Markdown的一种格式，在标准Markdown上做了�
 ### 表格
 ```
 |姓名|学号|班级|
-|-|-:|:-:|
+|---|---:|:---:|
 |张三|201221|B2|
 |李四|201256|C3|
 ```
@@ -21,7 +21,7 @@ GFM是Github拓展的基于Markdown的一种格式，在标准Markdown上做了�
 效果如下：
 
 |姓名|学号|班级|
-|-|-:|:-:|
+|---|---:|:---:|
 |张三|201221|B2|
 |李四|201256|C3|
 
@@ -53,9 +53,12 @@ GFM是Github拓展的基于Markdown的一种格式，在标准Markdown上做了�
 $$ J(\theta) = \frac 1 2 \sum_{i=1}^m (h_\theta(x^{(i)})-y^{(i)})^2 $$
 ```
 上面用LaTex格式书写的数学公式经过MathJax展示后效果如下：
+
 $$ J(\theta) = \frac 1 2 \sum_{i=1}^m (h_\theta(x^{(i)})-y^{(i)})^2 $$
 
-另外，行间公式使用`$$`作为公式的左右界限，行内公式使用`$`作为公式的左右界限。如$ \theta_i=\theta_i-\alpha\frac\partial{\\partial\theta_i}J(\theta) $
+~~另外，行间公式使用`$$`作为公式的左右界限，行内公式使用`$`作为公式的左右界限。如$ \theta_i=\theta_i-\alpha\frac\partial{\\partial\theta_i}J(\theta) $~~
+
+$$ \theta_i=\theta_i-\alpha\frac\partial{\\partial\theta_i}J(\theta) $$
 
 更复杂的语法参考[Cmd Markdown 公式指导手册](https://www.zybuluo.com/codeep/note/163962)
 
@@ -65,7 +68,7 @@ $$ J(\theta) = \frac 1 2 \sum_{i=1}^m (h_\theta(x^{(i)})-y^{(i)})^2 $$
 
 ```
 <script type="text/javascript"
-src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 ```
 
