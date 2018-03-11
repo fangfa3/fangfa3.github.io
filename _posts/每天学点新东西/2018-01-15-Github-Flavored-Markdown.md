@@ -13,7 +13,7 @@ GFM是Github拓展的基于Markdown的一种格式，在标准Markdown上做了�
 ### 表格
 ```
 |姓名|学号|班级|
-|-|-|-|
+|-|-:|:-:|
 |张三|201221|B2|
 |李四|201256|C3|
 ```
@@ -21,7 +21,7 @@ GFM是Github拓展的基于Markdown的一种格式，在标准Markdown上做了�
 效果如下：
 
 |姓名|学号|班级|
-|-|-|-|
+|-|-:|:-:|
 |张三|201221|B2|
 |李四|201256|C3|
 
@@ -58,6 +58,18 @@ $$ J(\theta) = \frac 1 2 \sum_{i=1}^m (h_\theta(x^{(i)})-y^{(i)})^2 $$
 另外，行间公式使用`$$`作为公式的左右界限，行内公式使用`$`作为公式的左右界限。如$ \theta_i=\theta_i-\alpha\frac\partial{\\partial\theta_i}J(\theta) $
 
 更复杂的语法参考[Cmd Markdown 公式指导手册](https://www.zybuluo.com/codeep/note/163962)
+
+#### 在github.io上显示
+
+在根模板文件上增加一句话： 
+
+```
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+```
+
+在我的Jekyll文件结构中，根模板的位置在_layout中。
 
 ### 引用
 
