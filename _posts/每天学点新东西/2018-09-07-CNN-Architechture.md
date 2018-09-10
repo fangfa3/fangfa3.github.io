@@ -60,7 +60,7 @@ tag: CNN
 
 ### Faster R-CNN
 
-![Faster R-CNN](https://github.com/fangfa3/fangfa3.github.io/blob/master/styles/images/AI/Faster R-CNN.jpg?raw=true)
+![Faster R-CNN](https://github.com/fangfa3/fangfa3.github.io/blob/master/styles/images/AI/Faster R-CNN.JPG?raw=true)
 
 贡献：`提出RPN`，用卷积网络得到RoI。
 
