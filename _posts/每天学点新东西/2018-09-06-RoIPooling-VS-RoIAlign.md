@@ -3,7 +3,7 @@ layout: original
 title: "RoIPooling VS RoIAlign"
 date: 2018-09-06 21:50:00 
 categories: 每天学点新东西
-tag: markdown
+tag: CNN
 ---
 * content 
 {:toc}

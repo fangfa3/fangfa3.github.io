@@ -3,13 +3,20 @@ layout: original
 title: "CNN paper note"
 date: 2018-09-07 21:50:00 
 categories: 每天学点新东西
-tag: markdown
+tag: CNN
 ---
 * content 
 {:toc}
 
 ### R-CNN
-提出了用卷积做检测。
+
+![R-CNN](https://github.com/fangfa3/fangfa3.github.io/blob/master/styles/images/AI/R-CNN.jpg?raw=true)
+
+贡献：
+
+提出了用卷积网络做检测。
+
+提出了先用大的数据集预训练，再在目标任务的数据集上finetune。
 
 具体地，CNN提取roi特征；`预测框修正`。
 
@@ -22,7 +29,19 @@ tag: markdown
 
 3、一方面用全连接层修正预选框，一方面用SVM进行分类。
 
+### SPPnet
+
+![SPPnet](https://github.com/fangfa3/fangfa3.github.io/blob/master/styles/images/AI/SPPnet.jpg?raw=true)
+
+贡献：
+
+提出了 [RoI pooling](https://fangfa3.github.io/2018/09/06/RoIPooling-VS-RoIAlign/).
+
+
 ### Fast R-CNN
+
+![Fast R-CNN](https://github.com/fangfa3/fangfa3.github.io/blob/master/styles/images/AI/Fast R-CNN.jpg?raw=true)
+
 贡献：
 
 1、用了`多任务损失函数`，分类+预测框修正；
@@ -41,10 +60,13 @@ tag: markdown
 
 ### Faster R-CNN
 
+![Faster R-CNN](https://github.com/fangfa3/fangfa3.github.io/blob/master/styles/images/AI/Faster R-CNN.jpg?raw=true)
+
 贡献：`提出RPN`，用卷积网络得到RoI。
 
 
 ### Mask R-CNN
+![Mask R-CNN](https://github.com/fangfa3/fangfa3.github.io/blob/master/styles/images/AI/Mask R-CNN.jpg?raw=true)
 
 贡献：
 
