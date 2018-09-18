@@ -1,9 +1,9 @@
 ---
 layout: original
-title: "CNN paper note"
+title: "R-CNN系列"
 date: 2018-09-07 21:50:00 
 categories: 每天学点新东西
-tag: CNN
+tag: Paper Note
 ---
 * content 
 {:toc}
