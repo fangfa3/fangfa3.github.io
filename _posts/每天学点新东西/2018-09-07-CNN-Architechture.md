@@ -8,7 +8,17 @@ tag: CNN
 * content 
 {:toc}
 
-### R-CNN
+
+### FPN
+
+贡献：
+
+设计了一个融合低层特征与高层特征的方式，使得既有高层丰富的语义特征，也有底层更精准的位置信息，在检测中可以取得更好的效果。
+
+
+### R-CNN 系列
+
+#### R-CNN
 
 ![R-CNN](https://github.com/fangfa3/fangfa3.github.io/blob/master/styles/images/AI/R-CNN.jpg?raw=true)
 
@@ -29,7 +39,7 @@ tag: CNN
 
 3、一方面用全连接层修正预选框，一方面用SVM进行分类。
 
-### SPPnet
+#### SPPnet
 
 ![SPPnet](https://github.com/fangfa3/fangfa3.github.io/blob/master/styles/images/AI/SPPnet.jpg?raw=true)
 
@@ -38,7 +48,7 @@ tag: CNN
 提出了 [RoI pooling](https://fangfa3.github.io/2018/09/06/RoIPooling-VS-RoIAlign/).
 
 
-### Fast R-CNN
+#### Fast R-CNN
 
 ![Fast R-CNN](https://github.com/fangfa3/fangfa3.github.io/blob/master/styles/images/AI/Fast R-CNN.jpg?raw=true)
 
@@ -58,14 +68,14 @@ tag: CNN
 
 4、经过全连接层进行分类+预测框修正。
 
-### Faster R-CNN
+#### Faster R-CNN
 
 ![Faster R-CNN](https://github.com/fangfa3/fangfa3.github.io/blob/master/styles/images/AI/Faster R-CNN.JPG?raw=true)
 
 贡献：`提出RPN`，用卷积网络得到RoI。
 
 
-### Mask R-CNN
+#### Mask R-CNN
 ![Mask R-CNN](https://github.com/fangfa3/fangfa3.github.io/blob/master/styles/images/AI/Mask R-CNN.jpg?raw=true)
 
 贡献：
