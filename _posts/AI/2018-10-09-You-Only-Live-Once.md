@@ -9,4 +9,4 @@ tag: Paper Note
 {:toc}
 
 
-YOLO
+YOLO: You Only Look Once
